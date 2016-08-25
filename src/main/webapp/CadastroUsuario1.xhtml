@@ -8,7 +8,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </h:head>
 <h:body>
-
+	<h:form id="newForm">
+	<p:messages autoUpdate="false" />
+	</h:form>
 	<h:form id="frm">
 		<p:messages autoUpdate="true" />
 		<p:panelGrid columns="2">
@@ -26,6 +28,9 @@
 				required="true" />
 
 		</p:panelGrid>
+
+		<p:commandButton value="Cadastrar"
+			action="#{cadastroUsuarioBean.cadastrar}" />
 
 		<p:commandButton value="Cadastrar"
 			action="#{cadastroUsuarioBean.cadastrar}" />
